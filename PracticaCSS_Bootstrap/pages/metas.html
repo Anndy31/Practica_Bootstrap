@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas — PracticaBootstrap</title>
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-globe icon-spin me-2"></i>GB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navPrincipal" aria-controls="navPrincipal"
+                    aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navPrincipal">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa-solid fa-house me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#sobre-mi"><i class="fa-solid fa-user me-1"></i>Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyeccion.html"><i class="fa-solid fa-rocket me-1"></i>Proyección</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="metas.html"><i class="fa-solid fa-bullseye me-1"></i>Metas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#habilidades-actuales"><i class="fa-solid fa-code me-1"></i>Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#proyeccion-preview"><i class="fa-solid fa-folder-open me-1"></i>Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fa-solid fa-envelope me-1"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="margin-top:56px;">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section py-5">
+        <div class="container text-center animate-fade-up">
+            <span class="hero-badge"><i class="fa-solid fa-bullseye me-1"></i>Metas y Objetivos</span>
+            <h1 class="hero-title mt-2">Mis <span>Metas</span><br>Académicas y Personales</h1>
+            <p class="hero-subtitle mx-auto mt-3">
+                Cada meta es un compromiso con mi propio crecimiento.
+                Aquí detallo mis objetivos a corto, mediano y largo plazo.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== ALERTA ===== -->
+    <section class="seccion-blanca py-3">
+        <div class="container">
+            <div class="alert alert-custom-success alert-dismissible fade show" role="alert">
+                <i class="fa-solid fa-circle-info me-2"></i>
+                <strong>Nota:</strong> Las metas se revisan y actualizan cada trimestre para mantener coherencia con el avance real del aprendizaje.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== METAS ACADÉMICAS ===== -->
+    <section class="seccion-clara" id="metas-academicas">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-graduation-cap me-2"></i>Metas Académicas</h2>
+            <p class="text-center text-muted subtitulo mb-4">Logros educativos que persigo</p>
+
+            <div class="row g-4">
+
+                <!-- Corto plazo (2026) -->
+                <div class="col-12 col-md-4">
+                    <article class="card card-custom h-100">
+                        <div class="card-header">
+                            <i class="fa-solid fa-clock me-2"></i>Corto Plazo — 2026
+                            <span class="badge bg-warning text-dark ms-2">En curso</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-custom">
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-check-circle text-primario me-2"></i>
+                                    Aprobar todas las materias del semestre con nota ≥ 8/10
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-check-circle text-primario me-2"></i>
+                                    Completar práctica de Bootstrap 5 con calificación sobresaliente
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-check-circle text-primario me-2"></i>
+                                    Publicar portafolio en GitHub Pages antes de julio 2026
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-check-circle text-primario me-2"></i>
+                                    Iniciar curso de JavaScript en freeCodeCamp
+                                </li>
+                            </ul>
+                            <div class="mt-3">
+                                <p class="progress-label small">Avance general</p>
+                                <div class="progress progress-custom">
+                                    <div class="progress-bar" style="width:65%">65%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Mediano plazo (2027) -->
+                <div class="col-12 col-md-4">
+                    <article class="card card-custom h-100">
+                        <div class="card-header">
+                            <i class="fa-solid fa-hourglass-half me-2"></i>Mediano Plazo — 2027
+                            <span class="badge bg-info text-dark ms-2">Planificado</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-custom">
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-certificate text-dorado me-2"></i>
+                                    Obtener certificación CISCO CCNA oficial
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-certificate text-dorado me-2"></i>
+                                    Obtener AWS Cloud Practitioner
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-code text-primario me-2"></i>
+                                    Completar proyecto fullstack con React + Node.js
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-language text-primario me-2"></i>
+                                    Alcanzar nivel B2 de inglés (certificado)
+                                </li>
+                            </ul>
+                            <div class="mt-3">
+                                <p class="progress-label small">Avance general</p>
+                                <div class="progress progress-custom">
+                                    <div class="progress-bar" style="width:10%">10%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Largo plazo (2028+) -->
+                <div class="col-12 col-md-4">
+                    <article class="card card-custom h-100">
+                        <div class="card-header">
+                            <i class="fa-solid fa-flag me-2"></i>Largo Plazo — 2028+
+                            <span class="badge bg-secondary ms-2">Futuro</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-custom">
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-trophy text-dorado me-2"></i>
+                                    Titularme con mención de honor en ESPE
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-trophy text-dorado me-2"></i>
+                                    Publicar tesis de grado en repositorio institucional
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-school text-primario me-2"></i>
+                                    Postular a maestría en Ciberseguridad (FLACSO o exterior)
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-chalkboard-user text-primario me-2"></i>
+                                    Ser mentor para estudiantes de primer año de TI
+                                </li>
+                            </ul>
+                            <div class="mt-3">
+                                <p class="progress-label small">Avance general</p>
+                                <div class="progress progress-custom">
+                                    <div class="progress-bar" style="width:5%">5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECNOLOGÍAS A APRENDER (Accordion con Carousel interno) ===== -->
+    <section class="seccion-blanca" id="tecnologias-aprender">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-microchip me-2"></i>Tecnologías que Quiero Aprender</h2>
+            <p class="text-center text-muted subtitulo mb-4">Roadmap tecnológico detallado</p>
+
+            <!-- Accordion con carousel dentro del primer ítem -->
+            <div class="accordion accordion-custom" id="accordionTech">
+
+                <!-- Frontend -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="hTech1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tech1" aria-expanded="true" aria-controls="tech1">
+                            <i class="fa-solid fa-palette me-2 text-primario"></i>
+                            Frontend Moderno — React, TypeScript, Tailwind
+                        </button>
+                    </h2>
+                    <div id="tech1" class="accordion-collapse collapse show" data-bs-parent="#accordionTech">
+                        <div class="accordion-body">
+                            <!-- Carousel DENTRO del accordion -->
+                            <div id="carouselFrontend" class="carousel slide" data-bs-ride="false">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row g-3 py-2">
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-brands fa-react fa-3x text-info mb-2"></i>
+                                                <h6 class="fw-bold">React.js</h6>
+                                                <p class="small text-muted">Componentes, hooks, estado, SPA. Meta: 2026.</p>
+                                                <span class="badge badge-meta">Prioridad 1</span>
+                                            </div>
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-brands fa-js fa-3x text-warning mb-2"></i>
+                                                <h6 class="fw-bold">TypeScript</h6>
+                                                <p class="small text-muted">Tipado estático sobre JS. Meta: 2026.</p>
+                                                <span class="badge badge-tech">Prioridad 2</span>
+                                            </div>
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-solid fa-wind fa-3x text-primary mb-2"></i>
+                                                <h6 class="fw-bold">Tailwind CSS</h6>
+                                                <p class="small text-muted">CSS utility-first para diseño rápido. Meta: 2026.</p>
+                                                <span class="badge badge-tech">Prioridad 3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row g-3 py-2">
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-brands fa-vuejs fa-3x text-success mb-2"></i>
+                                                <h6 class="fw-bold">Vue.js</h6>
+                                                <p class="small text-muted">Framework progresivo alternativo a React. Meta: 2027.</p>
+                                                <span class="badge badge-tech">2027</span>
+                                            </div>
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-solid fa-n fa-3x text-dark mb-2"></i>
+                                                <h6 class="fw-bold">Next.js</h6>
+                                                <p class="small text-muted">SSR y SSG con React. Meta: 2027.</p>
+                                                <span class="badge badge-tech">2027</span>
+                                            </div>
+                                            <div class="col-12 col-sm-4 text-center">
+                                                <i class="fa-solid fa-mobile fa-3x text-secondary mb-2"></i>
+                                                <h6 class="fw-bold">Flutter</h6>
+                                                <p class="small text-muted">Aplicaciones móviles multiplataforma. Meta: 2027.</p>
+                                                <span class="badge badge-meta">2027</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrontend" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselFrontend" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-success rounded-circle p-3" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="hTech2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tech2" aria-expanded="false" aria-controls="tech2">
+                            <i class="fa-solid fa-server me-2 text-primario"></i>
+                            Backend — Node.js, Python, Bases de Datos
+                        </button>
+                    </h2>
+                    <div id="tech2" class="accordion-collapse collapse" data-bs-parent="#accordionTech">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-brands fa-node-js fa-3x text-success mb-2"></i>
+                                    <h6 class="fw-bold">Node.js + Express</h6>
+                                    <p class="small text-muted">APIs REST, middlewares. Meta: 2026–2027.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-brands fa-python fa-3x text-warning mb-2"></i>
+                                    <h6 class="fw-bold">Python + Django</h6>
+                                    <p class="small text-muted">Frameworks web Python. Meta: 2027.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-solid fa-database fa-3x text-primario mb-2"></i>
+                                    <h6 class="fw-bold">PostgreSQL</h6>
+                                    <p class="small text-muted">BD relacional avanzada. Meta: 2026.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-solid fa-leaf fa-3x text-success mb-2"></i>
+                                    <h6 class="fw-bold">MongoDB</h6>
+                                    <p class="small text-muted">BD NoSQL documental. Meta: 2027.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="hTech3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tech3" aria-expanded="false" aria-controls="tech3">
+                            <i class="fa-solid fa-cloud me-2 text-primario"></i>
+                            Cloud, DevOps y Seguridad
+                        </button>
+                    </h2>
+                    <div id="tech3" class="accordion-collapse collapse" data-bs-parent="#accordionTech">
+                        <div class="accordion-body">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-brands fa-aws fa-3x text-warning mb-2"></i>
+                                    <h6 class="fw-bold">AWS</h6>
+                                    <p class="small text-muted">EC2, S3, Lambda. Cert: 2027.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-brands fa-docker fa-3x text-info mb-2"></i>
+                                    <h6 class="fw-bold">Docker</h6>
+                                    <p class="small text-muted">Contenedores y despliegue. Meta: 2027.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-brands fa-github fa-3x text-dark mb-2"></i>
+                                    <h6 class="fw-bold">GitHub Actions</h6>
+                                    <p class="small text-muted">CI/CD automatizado. Meta: 2027.</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 text-center">
+                                    <i class="fa-solid fa-shield-halved fa-3x text-danger mb-2"></i>
+                                    <h6 class="fw-bold">Cybersecurity</h6>
+                                    <p class="small text-muted">OWASP, pentesting básico. Meta: 2028.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /accordion -->
+
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICACIONES (Cards + Tabla combinados) ===== -->
+    <section class="seccion-clara" id="certificaciones">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-certificate me-2"></i>Certificaciones Planificadas</h2>
+            <p class="text-center text-muted subtitulo mb-4">Credenciales que validarán mis conocimientos</p>
+
+            <div class="row g-4">
+
+                <!-- Cards de certificaciones -->
+                <div class="col-12 col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <div class="card card-custom text-center p-3 h-100">
+                                <i class="fa-solid fa-network-wired fa-3x text-primario mb-2"></i>
+                                <h6 class="fw-bold">Cisco CCNA 200-301</h6>
+                                <p class="small text-muted">Redes, routing, switching, seguridad básica.</p>
+                                <div class="progress progress-custom mt-2 mb-2">
+                                    <div class="progress-bar" style="width:25%">25%</div>
+                                </div>
+                                <span class="badge badge-meta">Meta: Dic 2026</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card card-custom text-center p-3 h-100">
+                                <i class="fa-brands fa-aws fa-3x text-dorado mb-2"></i>
+                                <h6 class="fw-bold">AWS Cloud Practitioner</h6>
+                                <p class="small text-muted">Fundamentos de nube, servicios AWS, arquitectura.</p>
+                                <div class="progress progress-custom mt-2 mb-2">
+                                    <div class="progress-bar" style="width:5%">5%</div>
+                                </div>
+                                <span class="badge badge-tech">Meta: Jun 2027</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card card-custom text-center p-3 h-100">
+                                <i class="fa-brands fa-google fa-3x text-dorado mb-2"></i>
+                                <h6 class="fw-bold">Google UX Design</h6>
+                                <p class="small text-muted">Diseño centrado en el usuario, prototipado, Figma.</p>
+                                <div class="progress progress-custom mt-2 mb-2">
+                                    <div class="progress-bar" style="width:0%">0%</div>
+                                </div>
+                                <span class="badge badge-tech">Meta: Sep 2026</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card card-custom text-center p-3 h-100">
+                                <i class="fa-solid fa-shield-halved fa-3x text-primario mb-2"></i>
+                                <h6 class="fw-bold">CompTIA Security+</h6>
+                                <p class="small text-muted">Ciberseguridad, criptografía, respuesta a incidentes.</p>
+                                <div class="progress progress-custom mt-2 mb-2">
+                                    <div class="progress-bar" style="width:0%">0%</div>
+                                </div>
+                                <span class="badge badge-tech">Meta: 2028</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla resumen -->
+                <div class="col-12 col-lg-5">
+                    <div class="card card-custom">
+                        <div class="card-header"><i class="fa-solid fa-table me-2"></i>Resumen Comparativo</div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table tabla-custom table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Certificación</th>
+                                            <th>Costo est.</th>
+                                            <th>Plazo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Cisco CCNA</td>
+                                            <td>$330</td>
+                                            <td><span class="badge bg-warning text-dark">Dic 2026</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Google UX Design</td>
+                                            <td>$49/mes</td>
+                                            <td><span class="badge bg-warning text-dark">Sep 2026</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>AWS Practitioner</td>
+                                            <td>$100</td>
+                                            <td><span class="badge bg-info text-dark">Jun 2027</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CompTIA Security+</td>
+                                            <td>$392</td>
+                                            <td><span class="badge bg-secondary">2028</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="alert alert-custom-warning py-2 mb-0 small">
+                                <i class="fa-solid fa-piggy-bank me-1"></i>
+                                <strong>Plan de ahorro:</strong> $50/mes apartados para certificaciones.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LLAMADA A ACCIÓN ===== -->
+    <section class="seccion-oscura text-center py-5">
+        <div class="container">
+            <h3 class="text-white fw-bold mb-3">
+                <i class="fa-solid fa-arrow-right me-2"></i>¿Listo para conocer más?
+            </h3>
+            <p class="text-white-50 mb-4">Explora mis habilidades técnicas actuales o los proyectos que planeo desarrollar.</p>
+            <a href="habilidades.html" class="btn btn-primario btn-lg me-2 mb-2">
+                <i class="fa-solid fa-code me-1"></i>Mis Habilidades
+            </a>
+            <a href="proyectos.html" class="btn btn-dorado btn-lg mb-2">
+                <i class="fa-solid fa-folder-open me-1"></i>Mis Proyectos
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <h5><i class="fa-solid fa-globe me-2"></i>PracticaBootstrap</h5>
+                <p class="small text-white-50">Portafolio de Geovanny Brito Casanova — ESPE Santo Domingo, 2026.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h5>Páginas</h5>
+                <a href="../index.html">Inicio</a>
+                <a href="proyeccion.html">Proyección</a>
+                <a href="metas.html">Metas</a>
+                <a href="habilidades.html">Habilidades</a>
+            </div>
+            <div class="col-6 col-md-3">
+                <h5>Más</h5>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center footer-bottom">
+            <address style="font-style:normal;">
+                <p class="mb-0">&copy; 2026 <strong>Geovanny Brito Casanova</strong> · ESPE · Bootstrap 5</p>
+            </address>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmGsR1fRN2P9Dg6aEyMF5rUfkJx"
+        crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

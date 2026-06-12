@@ -1,0 +1,651 @@
+    /* ================================================================
+    estilos.css — PracticaBootstrap
+    Personalización de Bootstrap 5 para el portafolio de proyección
+    profesional de Geovanny Brito Casanova
+    ================================================================ */
+
+    /* ---------------------------------------------------------------
+    1. VARIABLES CSS PERSONALIZADAS
+    -------------------------------------------------------------- */
+    :root {
+        --color-primario:    #6eb8f5;   /* azul principal suave */
+        --color-secundario:  #9acef8;   /* azul claro */
+        --color-acento:      #c3e3fd;   /* azul pastel */
+        --color-oscuro:      #4a90c2;   /* azul medio */
+        --color-claro:       #f4faff;   /* fondo casi blanco */
+        --color-blanco:      #ffffff;   
+        --sombra-suave:      0 4px 18px rgba(13,110,61,.12);
+        --sombra-hover:      0 8px 28px rgba(13,110,61,.22);
+        --radio-tarjeta:     14px;
+        --transicion:        0.3s ease;
+    }
+
+    /* ---------------------------------------------------------------
+    2. RESET Y BASE
+    -------------------------------------------------------------- */
+    *,
+    *::before,
+    *::after {
+    
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: var(--color-claro);
+        color: #1a1a2e;
+        line-height: 1.7;
+    }
+
+    /* ---------------------------------------------------------------
+    3. TIPOGRAFÍA PERSONALIZADA
+    -------------------------------------------------------------- */
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .titulo-seccion {
+        color: var(--color-primario);
+        border-bottom: 3px solid var(--color-secundario);
+        padding-bottom: 8px;
+        margin-bottom: 1.5rem;
+    }
+
+    .subtitulo {
+        color: var(--color-acento);
+        font-size: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    /* ---------------------------------------------------------------
+    4. NAVBAR PERSONALIZADA
+    -------------------------------------------------------------- */
+    .navbar-custom {
+        background: linear-gradient(135deg, var(--color-oscuro) 0%, var(--color-primario) 100%);
+        box-shadow: 0 2px 12px rgba(0,0,0,.3);
+        padding: 0.75rem 1rem;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: var(--color-secundario) !important;
+        letter-spacing: 1px;
+        transition: var(--transicion);
+    }
+
+    .navbar-custom .navbar-brand:hover {
+        color: var(--color-blanco) !important;
+        text-shadow: 0 0 8px var(--color-secundario);
+    }
+
+    .navbar-custom .nav-link {
+        color: rgba(255,255,255,.85) !important;
+        font-weight: 600;
+        padding: 0.5rem 0.9rem !important;
+        border-radius: 6px;
+        transition: var(--transicion);
+        font-size: 0.92rem;
+    }
+
+    .navbar-custom .nav-link:hover,
+    .navbar-custom .nav-link.active {
+        background-color: var(--color-secundario);
+        color: var(--color-oscuro) !important;
+    }
+
+    .navbar-custom .navbar-toggler {
+        border-color: var(--color-secundario);
+    }
+
+    .navbar-custom .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(219,161,18,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    /* ---------------------------------------------------------------
+    5. HERO / PORTADA
+    -------------------------------------------------------------- */
+    .hero-section {
+        background: linear-gradient(135deg, var(--color-oscuro) 0%, var(--color-primario) 60%, var(--color-acento) 100%);
+        color: var(--color-blanco);
+        padding: 5rem 0 4rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-section::before {
+        content: '';
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 300px;
+        height: 300px;
+        background: rgba(219,161,18,.15);
+        border-radius: 50%;
+    }
+
+    .hero-section::after {
+        content: '';
+        position: absolute;
+        bottom: -80px;
+        left: -60px;
+        width: 250px;
+        height: 250px;
+        background: rgba(255,255,255,.06);
+        border-radius: 50%;
+    }
+
+    .hero-badge {
+        background-color: var(--color-secundario);
+        color: var(--color-oscuro);
+        font-weight: 700;
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .hero-title span {
+        color: var(--color-secundario);
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        opacity: 0.9;
+        max-width: 540px;
+    }
+
+    .hero-avatar {
+        width: 700px;
+        height: 150px;
+        border-radius: 40%;
+        
+    }
+
+    /* ---------------------------------------------------------------
+    6. TARJETAS (CARDS)
+    -------------------------------------------------------------- */
+    .card-custom {
+        border: none;
+        border-radius: var(--radio-tarjeta);
+        box-shadow: var(--sombra-suave);
+        transition: var(--transicion);
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .card-custom:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--sombra-hover);
+    }
+
+    .card-custom .card-header {
+        background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+        color: var(--color-blanco);
+        font-weight: 700;
+        border-bottom: none;
+        padding: 1rem 1.25rem;
+    }
+
+    .card-custom .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 0;
+    }
+
+    .card-proyecto:hover .card-img-top {
+        transform: scale(1.04);
+        transition: transform 0.4s ease;
+    }
+
+    .card-proyecto {
+        overflow: hidden;
+    }
+
+    /* ---------------------------------------------------------------
+    7. BOTONES PERSONALIZADOS
+    -------------------------------------------------------------- */
+    .btn-primario {
+        background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+        color: var(--color-blanco);
+        border: none;
+        border-radius: 8px;
+        font-weight: 700;
+        padding: 0.6rem 1.5rem;
+        transition: var(--transicion);
+        box-shadow: 0 3px 10px rgba(13,110,61,.3);
+    }
+
+    .btn-primario:hover {
+        background: linear-gradient(135deg, var(--color-oscuro), var(--color-primario));
+        color: var(--color-secundario);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(13,110,61,.4);
+    }
+
+    .btn-dorado {
+        background: linear-gradient(135deg, var(--color-secundario), #f0c040);
+        color: var(--color-oscuro);
+        border: none;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 0.6rem 1.5rem;
+        transition: var(--transicion);
+    }
+
+    .btn-dorado:hover {
+        background: linear-gradient(135deg, #b8880e, var(--color-secundario));
+        color: var(--color-oscuro);
+        transform: translateY(-2px);
+    }
+
+    /* Override Bootstrap buttons */
+    .btn-success {
+        background-color: var(--color-primario) !important;
+        border-color: var(--color-primario) !important;
+    }
+
+    .btn-success:hover {
+        background-color: var(--color-oscuro) !important;
+        border-color: var(--color-oscuro) !important;
+    }
+
+    .btn-warning {
+        background-color: var(--color-secundario) !important;
+        border-color: var(--color-secundario) !important;
+        color: var(--color-oscuro) !important;
+    }
+
+    /* ---------------------------------------------------------------
+    8. BADGES PERSONALIZADOS
+    -------------------------------------------------------------- */
+    .badge-tech {
+        background-color: var(--color-primario) !important;
+        font-size: 0.75rem;
+        padding: 0.4em 0.75em;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+
+    .badge-meta {
+        background-color: var(--color-secundario) !important;
+        color: var(--color-oscuro) !important;
+        font-size: 0.75rem;
+        padding: 0.4em 0.75em;
+        border-radius: 50px;
+        font-weight: 700;
+    }
+
+    /* ---------------------------------------------------------------
+    9. PROGRESS BARS
+    -------------------------------------------------------------- */
+    .progress-custom {
+        height: 12px;
+        border-radius: 50px;
+        background-color: #e0ece4;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }
+
+    .progress-custom .progress-bar {
+        background: linear-gradient(90deg, var(--color-primario), var(--color-acento));
+        border-radius: 50px;
+        transition: width 1s ease;
+    }
+
+    .progress-label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--color-oscuro);
+        margin-bottom: 0.2rem;
+    }
+
+    /* ---------------------------------------------------------------
+    10. ACCORDION PERSONALIZADO
+    -------------------------------------------------------------- */
+    .accordion-custom .accordion-button {
+        background-color: var(--color-claro);
+        color: var(--color-oscuro);
+        font-weight: 700;
+        border: none;
+    }
+
+    .accordion-custom .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+        color: var(--color-blanco);
+        box-shadow: none;
+    }
+
+    .accordion-custom .accordion-button::after {
+        filter: none;
+    }
+
+    .accordion-custom .accordion-button:not(.collapsed)::after {
+        filter: brightness(10);
+    }
+
+    .accordion-custom .accordion-item {
+        border: 1px solid #d4e8d4;
+        border-radius: 10px !important;
+        margin-bottom: 0.5rem;
+        overflow: hidden;
+    }
+
+    /* ---------------------------------------------------------------
+    11. CAROUSEL
+    -------------------------------------------------------------- */
+    .carousel-custom .carousel-control-prev-icon,
+    .carousel-custom .carousel-control-next-icon {
+        background-color: var(--color-primario);
+        border-radius: 50%;
+        padding: 1.2rem;
+    }
+
+    .carousel-custom .carousel-indicators [data-bs-target] {
+        background-color: var(--color-secundario);
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+    }
+
+    .carousel-custom .carousel-caption {
+        background: rgba(13,25,16,.7);
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        bottom: 20px;
+    }
+
+    .carousel-custom img {
+        height: 380px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    /* ---------------------------------------------------------------
+    12. MODAL PERSONALIZADO
+    -------------------------------------------------------------- */
+    .modal-custom .modal-header {
+        background: linear-gradient(135deg, var(--color-oscuro), var(--color-primario));
+        color: var(--color-blanco);
+        border-bottom: none;
+    }
+
+    .modal-custom .modal-header .btn-close {
+        filter: invert(1);
+    }
+
+    .modal-custom .modal-footer {
+        border-top: 1px solid #d4e8d4;
+    }
+
+    /* ---------------------------------------------------------------
+    13. FORMULARIOS PERSONALIZADOS
+    -------------------------------------------------------------- */
+    .form-custom .form-control,
+    .form-custom .form-select {
+        border: 2px solid #c8dfc8;
+        border-radius: 8px;
+        padding: 0.6rem 1rem;
+        transition: var(--transicion);
+    }
+
+    .form-custom .form-control:focus,
+    .form-custom .form-select:focus {
+        border-color: var(--color-primario);
+        box-shadow: 0 0 0 0.2rem rgba(13,110,61,.2);
+    }
+
+    .form-custom label {
+        font-weight: 600;
+        color: var(--color-oscuro);
+        margin-bottom: 0.3rem;
+    }
+
+    /* ---------------------------------------------------------------
+    14. TABLA RESPONSIVA
+    -------------------------------------------------------------- */
+    .tabla-custom thead th {
+        background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+        color: var(--color-blanco);
+        font-weight: 700;
+        border: none;
+        padding: 0.85rem 1rem;
+    }
+
+    .tabla-custom tbody tr {
+        transition: background-color var(--transicion);
+    }
+
+    .tabla-custom tbody tr:hover {
+        background-color: #e8f5e8;
+    }
+
+    .tabla-custom tbody td {
+        padding: 0.75rem 1rem;
+        vertical-align: middle;
+        border-color: #d4e8d4;
+    }
+
+    /* ---------------------------------------------------------------
+    15. LIST GROUPS
+    -------------------------------------------------------------- */
+    .list-group-custom .list-group-item {
+        border: 1px solid #d4e8d4;
+        border-radius: 8px !important;
+        margin-bottom: 0.4rem;
+        transition: var(--transicion);
+        font-weight: 500;
+    }
+
+    .list-group-custom .list-group-item:hover {
+        background-color: #e8f5e8;
+        border-color: var(--color-primario);
+        transform: translateX(5px);
+    }
+
+    .list-group-custom .list-group-item.active {
+        background-color: var(--color-primario);
+        border-color: var(--color-primario);
+    }
+
+    /* ---------------------------------------------------------------
+    16. ALERTS PERSONALIZADAS
+    -------------------------------------------------------------- */
+    .alert-custom-success {
+        background-color: #d4edda;
+        border-left: 5px solid var(--color-primario);
+        color: var(--color-oscuro);
+        border-radius: 10px;
+    }
+
+    .alert-custom-warning {
+        background-color: #fff8e1;
+        border-left: 5px solid var(--color-secundario);
+        color: var(--color-oscuro);
+        border-radius: 10px;
+    }
+
+    /* ---------------------------------------------------------------
+    17. SECCIONES
+    -------------------------------------------------------------- */
+    .seccion-blanca {
+        background-color: var(--color-blanco);
+        padding: 4rem 0;
+    }
+
+    .seccion-clara {
+        background-color: var(--color-claro);
+        padding: 4rem 0;
+    }
+
+    .seccion-oscura {
+        background: linear-gradient(135deg, var(--color-oscuro) 0%, #143320 100%);
+        padding: 4rem 0;
+        color: var(--color-blanco);
+    }
+
+    /* ---------------------------------------------------------------
+    18. FOOTER
+    -------------------------------------------------------------- */
+    footer.footer-custom {
+        background: linear-gradient(135deg, var(--color-oscuro) 0%, #0f2318 100%);
+        color: rgba(255,255,255,.85);
+        padding: 3rem 0 1.5rem;
+    }
+
+    footer.footer-custom h5 {
+        color: var(--color-secundario);
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    footer.footer-custom a {
+        color: rgba(255,255,255,.75);
+        text-decoration: none;
+        transition: var(--transicion);
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+
+    footer.footer-custom a:hover {
+        color: var(--color-secundario);
+        padding-left: 6px;
+    }
+
+    .footer-divider {
+        border-color: rgba(255,255,255,.15);
+        margin: 1.5rem 0;
+    }
+
+    .footer-bottom {
+        color: rgba(255,255,255,.55);
+        font-size: 0.88rem;
+    }
+
+    /* ---------------------------------------------------------------
+    19. ANIMACIONES SUAVES
+    -------------------------------------------------------------- */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes pulse-ring {
+        0% { box-shadow: 0 0 0 0 rgba(219,161,18,.4); }
+        70% { box-shadow: 0 0 0 14px rgba(219,161,18,0); }
+        100% { box-shadow: 0 0 0 0 rgba(219,161,18,0); }
+    }
+
+    .animate-fade-up {
+        animation: fadeInUp 0.7s ease both;
+    }
+
+    .animate-fade-up-delay {
+        animation: fadeInUp 0.7s ease 0.2s both;
+    }
+
+    .avatar-pulse {
+        animation: pulse-ring 2.5s infinite;
+    }
+
+    /* Icono giratorio en la navbar */
+    .icon-spin {
+        display: inline-block;
+        animation: spin 8s linear infinite;
+    }
+
+    @keyframes spin {
+        to { transform: rotate(360deg); }
+    }
+
+    /* ---------------------------------------------------------------
+    20. UTILIDADES EXTRA
+    -------------------------------------------------------------- */
+    .divider-dorado {
+        height: 4px;
+        background: linear-gradient(90deg, var(--color-primario), var(--color-secundario), var(--color-acento));
+        border: none;
+        border-radius: 2px;
+        margin: 2rem 0;
+    }
+
+    .bg-custom-gradient {
+        background: linear-gradient(135deg, #e8f5e8 0%, #f4f9f4 100%);
+    }
+
+    .text-primario {
+        color: var(--color-primario) !important;
+    }
+
+    .text-dorado {
+        color: var(--color-secundario) !important;
+    }
+
+    .border-primario {
+        border-color: var(--color-primario) !important;
+    }
+
+    /* ---------------------------------------------------------------
+    21. RESPONSIVE — AJUSTES MOBILE FIRST
+    -------------------------------------------------------------- */
+    @media (max-width: 575.98px) {
+        .hero-section {
+            padding: 3rem 0 2.5rem;
+            text-align: center;
+        }
+
+        .hero-avatar {
+            width: 120px;
+            height: 120px;
+            margin-top: 1.5rem;
+        }
+
+        .hero-title {
+            font-size: 1.8rem;
+        }
+
+        .carousel-custom img {
+            height: 220px;
+        }
+
+        .tabla-responsive-sm {
+            font-size: 0.82rem;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .hero-title {
+            font-size: 2.2rem;
+        }
+
+        .carousel-custom img {
+            height: 280px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .hero-section {
+            padding: 6rem 0 5rem;
+        }
+    }

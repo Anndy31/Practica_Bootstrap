@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyección — PracticaBootstrap</title>
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fa-solid fa-globe icon-spin me-2"></i>GB
+            </a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+                    aria-controls="navPrincipal" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navPrincipal">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fa-solid fa-house me-1"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#sobre-mi"><i class="fa-solid fa-user me-1"></i>Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="proyeccion.html"><i class="fa-solid fa-rocket me-1"></i>Proyección</a></li>
+                    <li class="nav-item"><a class="nav-link" href="metas.html"><i class="fa-solid fa-bullseye me-1"></i>Metas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#habilidades-actuales"><i class="fa-solid fa-code me-1"></i>Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#proyeccion-preview"><i class="fa-solid fa-folder-open me-1"></i>Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="fa-solid fa-envelope me-1"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="margin-top:56px;">
+
+    <!-- ===== HERO INTERIOR ===== -->
+    <section class="hero-section py-5">
+        <div class="container text-center animate-fade-up">
+            <span class="hero-badge"><i class="fa-solid fa-rocket me-1"></i>Proyección Futura</span>
+            <h1 class="hero-title mt-2">Mi <span>Proyección</span><br>Personal y Profesional</h1>
+            <p class="hero-subtitle mx-auto mt-3">
+                Una mirada profunda hacia dónde me dirijo: perfil futuro, objetivos personales,
+                área laboral aspirada y mi plan de crecimiento integral.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== ALERTA INTRODUCTORIA ===== -->
+    <section class="seccion-blanca py-3">
+        <div class="container">
+            <div class="alert alert-custom-success d-flex align-items-center" role="alert">
+                <i class="fa-solid fa-lightbulb fa-lg me-3 text-primario"></i>
+                <div>
+                    <strong>Visión 2026–2030:</strong> Esta sección refleja mi plan de vida profesional
+                    construido a partir de mis fortalezas actuales y las demandas del mercado tecnológico.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PERFIL PROFESIONAL FUTURO ===== -->
+    <section class="seccion-clara" id="perfil-futuro">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-user-tie me-2"></i>Perfil Profesional Futuro</h2>
+            <p class="text-center text-muted subtitulo mb-4">Lo que aspiro ser en 5 años</p>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Descripción del perfil -->
+                <div class="col-12 col-lg-8">
+                    <article class="card card-custom h-100">
+                        <div class="card-header"><i class="fa-solid fa-id-badge me-2"></i>Descripción del Perfil</div>
+                        <div class="card-body">
+                            <p>
+                                Me proyecto como un <strong>Desarrollador Web Full-Stack</strong> con especialización en
+                                <strong>Ciberseguridad de Aplicaciones</strong>. Mi visión es construir sistemas web
+                                robustos, seguros y escalables que respondan a las necesidades reales de empresas y
+                                organizaciones en Ecuador y Latinoamérica.
+                            </p>
+                            <p>
+                                A largo plazo, aspiro a combinar el rol de desarrollador con el de
+                                <strong>arquitecto de soluciones en la nube</strong>, liderando equipos multidisciplinarios
+                                bajo metodologías ágiles como Scrum y Kanban.
+                            </p>
+
+                            <!-- Características clave -->
+                            <div class="row g-3 mt-2">
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-custom-gradient border-0 p-3 h-100">
+                                        <i class="fa-solid fa-code fa-2x text-primario mb-2"></i>
+                                        <h6 class="fw-bold">Desarrollo Full-Stack</h6>
+                                        <p class="small text-muted mb-0">Frontend moderno + Backend escalable + APIs REST/GraphQL</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-custom-gradient border-0 p-3 h-100">
+                                        <i class="fa-solid fa-shield-halved fa-2x text-primario mb-2"></i>
+                                        <h6 class="fw-bold">Seguridad Web</h6>
+                                        <p class="small text-muted mb-0">Pentesting básico, OWASP Top 10, autenticación segura</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-custom-gradient border-0 p-3 h-100">
+                                        <i class="fa-solid fa-cloud fa-2x text-primario mb-2"></i>
+                                        <h6 class="fw-bold">Cloud & DevOps</h6>
+                                        <p class="small text-muted mb-0">Despliegue en AWS/GCP, CI/CD, contenedores Docker</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="card bg-custom-gradient border-0 p-3 h-100">
+                                        <i class="fa-solid fa-people-group fa-2x text-primario mb-2"></i>
+                                        <h6 class="fw-bold">Liderazgo Técnico</h6>
+                                        <p class="small text-muted mb-0">Metodologías ágiles, gestión de proyectos, mentoría</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Aside: Área laboral aspirada -->
+                <aside class="col-12 col-lg-4">
+                    <div class="card card-custom h-100">
+                        <div class="card-header"><i class="fa-solid fa-briefcase me-2"></i>Área Laboral Aspirada</div>
+                        <div class="card-body">
+                            <p class="small text-muted">Sectores y empresas donde deseo trabajar:</p>
+                            <ul class="list-group list-group-custom">
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-building me-2 text-primario"></i>
+                                    Empresas de tecnología e innovación
+                                    <span class="badge badge-meta ms-auto">1ª opción</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-rocket me-2 text-primario"></i>
+                                    Startups de software y fintech
+                                    <span class="badge badge-tech ms-auto">2ª opción</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-landmark me-2 text-primario"></i>
+                                    Organismos públicos (MINTEL, CNT)
+                                    <span class="badge badge-tech ms-auto">3ª opción</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa-solid fa-globe me-2 text-primario"></i>
+                                    Trabajo remoto internacional
+                                    <span class="badge badge-meta ms-auto">Meta</span>
+                                </li>
+                            </ul>
+                            <div class="alert alert-custom-warning mt-3 py-2 small">
+                                <i class="fa-solid fa-star me-1"></i>
+                                <strong>Salario objetivo:</strong> $2.000–$3.500/mes en 5 años.
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OBJETIVOS PERSONALES (Accordion + Carousel combinados) ===== -->
+    <section class="seccion-blanca" id="objetivos-personales">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-seedling me-2"></i>Objetivos Personales</h2>
+            <p class="text-center text-muted subtitulo mb-4">Desarrollo integral como persona y profesional</p>
+
+            <div class="row g-4">
+
+                <!-- Accordion de objetivos -->
+                <div class="col-12 col-lg-6">
+                    <div class="accordion accordion-custom" id="accordionObjetivos">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="hObj1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#obj1" aria-expanded="true" aria-controls="obj1">
+                                    <i class="fa-solid fa-language me-2 text-primario"></i>Dominar el Inglés (B2–C1)
+                                </button>
+                            </h2>
+                            <div id="obj1" class="accordion-collapse collapse show" data-bs-parent="#accordionObjetivos">
+                                <div class="accordion-body">
+                                    <p class="small mb-2">El inglés es la lengua franca de la tecnología. Mi plan:</p>
+                                    <div class="progress progress-custom mb-1">
+                                        <div class="progress-bar" style="width:45%">A2 actual: 45%</div>
+                                    </div>
+                                    <div class="progress progress-custom">
+                                        <div class="progress-bar bg-warning" style="width:80%">Meta B2: 80%</div>
+                                    </div>
+                                    <p class="small mt-2 text-muted">Plataformas: Duolingo, Coursera English, British Council.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="hObj2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#obj2" aria-expanded="false" aria-controls="obj2">
+                                    <i class="fa-solid fa-dumbbell me-2 text-primario"></i>Equilibrio Salud y Trabajo
+                                </button>
+                            </h2>
+                            <div id="obj2" class="accordion-collapse collapse" data-bs-parent="#accordionObjetivos">
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-custom list-group-flush">
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-check text-primario me-2"></i>Ejercicio mínimo 3 veces por semana</li>
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-check text-primario me-2"></i>8 horas de sueño diarias</li>
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-check text-primario me-2"></i>Técnica Pomodoro para estudio</li>
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-check text-primario me-2"></i>Desconexión digital los domingos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="hObj3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#obj3" aria-expanded="false" aria-controls="obj3">
+                                    <i class="fa-solid fa-people-arrows me-2 text-primario"></i>Networking Profesional
+                                </button>
+                            </h2>
+                            <div id="obj3" class="accordion-collapse collapse" data-bs-parent="#accordionObjetivos">
+                                <div class="accordion-body">
+                                    <p class="small">Construir una red de contactos sólida en el ecosistema tecnológico ecuatoriano e internacional.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-2">
+                                        <span class="badge badge-tech">LinkedIn activo</span>
+                                        <span class="badge badge-tech">GitHub público</span>
+                                        <span class="badge badge-meta">Meetups tech</span>
+                                        <span class="badge badge-meta">Hackathones</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="hObj4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#obj4" aria-expanded="false" aria-controls="obj4">
+                                    <i class="fa-solid fa-book-open me-2 text-primario"></i>Aprendizaje Continuo
+                                </button>
+                            </h2>
+                            <div id="obj4" class="accordion-collapse collapse" data-bs-parent="#accordionObjetivos">
+                                <div class="accordion-body">
+                                    <p class="small mb-2">Leer al menos 12 libros técnicos por año y completar 2 cursos online por semestre en plataformas como:</p>
+                                    <ul class="list-group list-group-custom list-group-flush">
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-play text-primario me-2"></i>Udemy · Coursera · Platzi</li>
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-play text-primario me-2"></i>freeCodeCamp · The Odin Project</li>
+                                        <li class="list-group-item border-0 px-0 small"><i class="fa-solid fa-play text-primario me-2"></i>MIT OpenCourseWare</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Carousel de hitos personales -->
+                <div class="col-12 col-lg-6">
+                    <div class="card card-custom h-100">
+                        <div class="card-header"><i class="fa-solid fa-flag-checkered me-2"></i>Hitos de Crecimiento Personal</div>
+                        <div class="card-body d-flex flex-column justify-content-center">
+
+                            <div id="carouselHitos" class="carousel slide carousel-custom" data-bs-ride="carousel" data-bs-interval="3500">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselHitos" data-bs-slide-to="0" class="active" aria-label="Hito 1" aria-current="true"></button>
+                                    <button type="button" data-bs-target="#carouselHitos" data-bs-slide-to="1" aria-label="Hito 2"></button>
+                                    <button type="button" data-bs-target="#carouselHitos" data-bs-slide-to="2" aria-label="Hito 3"></button>
+                                    <button type="button" data-bs-target="#carouselHitos" data-bs-slide-to="3" aria-label="Hito 4"></button>
+                                </div>
+                                <div class="carousel-inner" style="min-height:220px;">
+                                    <div class="carousel-item active text-center p-4">
+                                        <i class="fa-solid fa-graduation-cap fa-4x text-primario mb-3"></i>
+                                        <h5 class="fw-bold">2026 — Certificación CCNA</h5>
+                                        <p class="text-muted small">Primer gran logro certificado. Valida mis conocimientos en redes y abre puertas profesionales.</p>
+                                        <span class="badge badge-meta">En preparación</span>
+                                    </div>
+                                    <div class="carousel-item text-center p-4">
+                                        <i class="fa-solid fa-laptop-code fa-4x text-primario mb-3"></i>
+                                        <h5 class="fw-bold">2027 — Primer proyecto freelance</h5>
+                                        <p class="text-muted small">Desarrollar y entregar un proyecto web real para un cliente, generando ingresos propios.</p>
+                                        <span class="badge badge-tech">Planificado</span>
+                                    </div>
+                                    <div class="carousel-item text-center p-4">
+                                        <i class="fa-solid fa-briefcase fa-4x text-dorado mb-3"></i>
+                                        <h5 class="fw-bold">2028 — Titulación ESPE</h5>
+                                        <p class="text-muted small">Obtener el título de Tecnólogo en TI con mención de honor y tesis calificada con excelencia.</p>
+                                        <span class="badge badge-meta">Meta principal</span>
+                                    </div>
+                                    <div class="carousel-item text-center p-4">
+                                        <i class="fa-solid fa-earth-americas fa-4x text-primario mb-3"></i>
+                                        <h5 class="fw-bold">2030 — Trabajo remoto internacional</h5>
+                                        <p class="text-muted small">Colaborar con equipos internacionales desde Ecuador, aplicando habilidades técnicas y de comunicación en inglés.</p>
+                                        <span class="badge badge-tech">Visión a largo plazo</span>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHitos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselHitos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLAN DE CRECIMIENTO PROFESIONAL (Tabla + Progress Bars) ===== -->
+    <section class="seccion-clara" id="plan-crecimiento">
+        <div class="container">
+            <h2 class="titulo-seccion text-center"><i class="fa-solid fa-chart-line me-2"></i>Plan de Crecimiento Profesional</h2>
+            <p class="text-center text-muted subtitulo mb-4">Hoja de ruta 2026–2030</p>
+
+            <div class="row g-4">
+
+                <!-- Tabla de plan -->
+                <div class="col-12 col-lg-7">
+                    <div class="card card-custom">
+                        <div class="card-header"><i class="fa-solid fa-table me-2"></i>Plan por Año</div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table tabla-custom table-hover mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Año</th>
+                                            <th>Enfoque</th>
+                                            <th>Meta clave</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>2026</strong></td>
+                                            <td>Bootstrap 5 · JS · CCNA</td>
+                                            <td>Certificación CCNA + portafolio web</td>
+                                            <td><span class="badge bg-warning text-dark">En curso</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2027</strong></td>
+                                            <td>React · Node.js · AWS</td>
+                                            <td>Proyecto fullstack + AWS Practitioner</td>
+                                            <td><span class="badge bg-secondary">Planificado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2028</strong></td>
+                                            <td>Titulación · Security+</td>
+                                            <td>Título ESPE + primer empleo formal</td>
+                                            <td><span class="badge bg-secondary">Planificado</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2029</strong></td>
+                                            <td>Maestría · Liderazgo</td>
+                                            <td>Postulación a maestría en ciberseguridad</td>
+                                            <td><span class="badge bg-info text-dark">Futuro</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2030</strong></td>
+                                            <td>Internacional · Remoto</td>
+                                            <td>Trabajo remoto + ingresos en USD</td>
+                                            <td><span class="badge bg-info text-dark">Futuro</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress hacia metas -->
+                <div class="col-12 col-lg-5">
+                    <div class="card card-custom h-100">
+                        <div class="card-header"><i class="fa-solid fa-signal me-2"></i>Avance hacia Metas 2026</div>
+                        <div class="card-body">
+                            <p class="progress-label">Bootstrap 5 dominado</p>
+                            <div class="progress progress-custom mb-3">
+                                <div class="progress-bar" style="width:80%">80%</div>
+                            </div>
+                            <p class="progress-label">JavaScript ES6</p>
+                            <div class="progress progress-custom mb-3">
+                                <div class="progress-bar" style="width:40%">40%</div>
+                            </div>
+                            <p class="progress-label">Estudio CCNA</p>
+                            <div class="progress progress-custom mb-3">
+                                <div class="progress-bar" style="width:25%">25%</div>
+                            </div>
+                            <p class="progress-label">Inglés B2</p>
+                            <div class="progress progress-custom mb-3">
+                                <div class="progress-bar" style="width:45%">45%</div>
+                            </div>
+                            <p class="progress-label">Portafolio GitHub</p>
+                            <div class="progress progress-custom mb-3">
+                                <div class="progress-bar" style="width:60%">60%</div>
+                            </div>
+
+                            <div class="alert alert-custom-warning mt-3 py-2 small">
+                                <i class="fa-solid fa-info-circle me-1"></i>
+                                Progreso actualizado mensualmente. Última revisión: <strong>junio 2026</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLAN DE MEJORA PERSONAL ===== -->
+    <section class="seccion-oscura" id="mejora-personal">
+        <div class="container">
+            <h2 class="text-white titulo-seccion text-center border-bottom border-secondary">
+                <i class="fa-solid fa-star me-2"></i>Plan de Mejora Personal
+            </h2>
+            <p class="text-center text-white-50 subtitulo mb-4">Habilidades blandas y disciplina</p>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-custom text-center p-4">
+                        <i class="fa-solid fa-brain fa-3x text-primario mb-3"></i>
+                        <h5 class="fw-bold">Mentalidad de Crecimiento</h5>
+                        <p class="small text-muted">Adoptar la filosofía de que las habilidades se desarrollan con esfuerzo. Errores = aprendizaje.</p>
+                        <span class="badge badge-meta">En práctica</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-custom text-center p-4">
+                        <i class="fa-solid fa-clock fa-3x text-primario mb-3"></i>
+                        <h5 class="fw-bold">Gestión del Tiempo</h5>
+                        <p class="small text-muted">Uso de la técnica Pomodoro, planner semanal digital y bloques de trabajo profundo (deep work).</p>
+                        <span class="badge badge-tech">Implementando</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-custom text-center p-4">
+                        <i class="fa-solid fa-comments fa-3x text-primario mb-3"></i>
+                        <h5 class="fw-bold">Comunicación Asertiva</h5>
+                        <p class="small text-muted">Mejorar habilidades de presentación, redacción técnica y trabajo en equipo colaborativo.</p>
+                        <span class="badge badge-meta">En desarrollo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="metas.html" class="btn btn-dorado btn-lg me-2">
+                    <i class="fa-solid fa-bullseye me-1"></i>Ver Metas Detalladas
+                </a>
+                <a href="habilidades.html" class="btn btn-outline-light btn-lg">
+                    <i class="fa-solid fa-code me-1"></i>Ver Habilidades
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <h5><i class="fa-solid fa-globe me-2"></i>PracticaBootstrap</h5>
+                <p class="small text-white-50">Portafolio de proyección profesional de Geovanny Brito Casanova — ESPE Santo Domingo, 2026.</p>
+            </div>
+            <div class="col-6 col-md-4">
+                <h5>Páginas</h5>
+                <a href="../index.html">Inicio</a>
+                <a href="proyeccion.html">Proyección</a>
+                <a href="metas.html">Metas</a>
+                <a href="habilidades.html">Habilidades</a>
+            </div>
+            <div class="col-6 col-md-4">
+                <h5>Más</h5>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center footer-bottom">
+            <address style="font-style:normal;">
+                <p class="mb-0">&copy; 2026 <strong>Geovanny Brito Casanova</strong> · ESPE · Integración Bootstrap 5</p>
+            </address>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmGsR1fRN2P9Dg6aEyMF5rUfkJx"
+        crossorigin="anonymous"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
